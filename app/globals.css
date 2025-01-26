@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: serif;
+  font-size: large;
+
+}
+
+input::placeholder {
+  color: #171515; /* Darker placeholder color */
+  opacity: 1; /* Ensures full opacity in Firefox */
+  font-family: serif;
+  font-size: large;
+
+  
+}
+
+/* For compatibility with other browsers */
+input:-ms-input-placeholder { /* Edge 12-18 */
+  font-family: serif;
+  font-size: large;
+  color: #171515;
+
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: Arial, Helvetica, sans-serif;  
+  color: #171515;
+}
+
+
+
+/* Media Query for Mobile and tablet(vertical view) Devices */
+@media (max-width: 900px) {
+  table {
+    font-size: 15px;
+  }
+  th,
+  td {
+    padding: 5px;
+    text-align: left;
+  }
+  .passwordTable {
+    padding: 10px;
+  }
+  input::placeholder {
+    color: #171515; /* Darker placeholder color */
+    opacity: 1; /* Ensures full opacity in Firefox */
+    font-family:serif;
+    font-size: medium;
+    
+  }
+  
+  /* For compatibility with other browsers */
+  input:-ms-input-placeholder { /* Edge 12-18 */
+    font-family:serif; 
+    color: #171515;
+    font-size: medium;
+  }
+  
+  input::-ms-input-placeholder { /* Microsoft Edge */
+    font-family:serif;  
+    color: #171515;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 1350px){
+  input::placeholder {
+    color: #171515; /* Darker placeholder color */
+    opacity: 1; /* Ensures full opacity in Firefox */
+    font-family: serif;
+    font-size: medium;
+    
+  }
+  
+  /* For compatibility with other browsers */
+  input:-ms-input-placeholder { /* Edge 12-18 */
+    font-family: serif; 
+    color: #171515;
+    font-size: medium;
+  }
+  
+  input::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: serif;  
+    color: #171515;
+    font-size: medium;
+  }
+}
+
+@media (max-width:1300px){
+  .site{
+    width: 20vw;
+  }
+}
